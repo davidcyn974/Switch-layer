@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="206dp">
+
+
+        <RadioGroup
+            android:layout_width="118dp"
+            android:layout_height="106dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radio_guerrier"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:text="@string/radioGuerrier" />
+
+            <RadioButton
+                android:id="@+id/radio_mage"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:text="@string/radioMage" />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="199dp"
+            android:layout_height="180dp"
+            android:layout_gravity="end"
+            android:layout_margin="80dp"
+            android:contentDescription="@string/guerrierDescription"
+            android:src="@drawable/guerrier">
+
+        </ImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="122dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_margin="1dp"
+            android:layout_weight="0.3"
+            android:text="@string/saveButtonText">
+
+        </Button>
+
+        <Button
+            android:id="@+id/buttonNew"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:layout_weight="0.3"
+            android:text="@string/newButtonText">
+
+        </Button>
+
+        <Button
+            android:id="@+id/reinitialiserButton"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:layout_weight="0.3"
+            android:text="@string/resetButtonText">
+
+        </Button>
+    </LinearLayout>
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="367dp"
+        android:layout_height="50dp"
+
+        android:checked="false"
+        android:text="@string/textCheckBox" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:text="@string/textNom"
+                android:textColor="#757575">
+
+            </TextView>
+            <EditText
+                android:id="@+id/Nom"
+                android:hint="@string/textNom"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+
+            <!--pas réussi à faire un switch qui marche ...-->
+            <Switch
+                android:id="@+id/monSwitchmaterial"
+                android:layout_width="368dp"
+                android:layout_height="wrap_content"
+
+                android:textColor="#733BD6"
+                android:textSize="15sp"
+
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:text="@string/Classe">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/Classe"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                />
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:text="@string/PV">
+
+            </TextView>
+            <EditText
+                android:id="@+id/PV"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/PV"
+                android:inputType="number" />
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:text="@string/CA">
+
+            </TextView>
+            <EditText
+                android:id="@+id/CA"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/CA"
+                android:inputType="number" />
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:text="@string/DMG">
+
+            </TextView>
+            <EditText
+                android:id="@+id/DMG"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/DMG"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/textPointsdeMagie"
+                android:layout_width="183dp"
+                android:layout_height="match_parent"
+                android:text="@string/PDM">
+
+            </TextView>
+            <EditText
+
+                android:id="@+id/PointsMagie"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="@string/PDM"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

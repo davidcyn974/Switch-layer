@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Personnage</string>
+    <string name="radioGuerrier">Guerrier</string>
+    <string name="radioMage">Mage</string>
+    <string name="guerrierDescription">image de warrior></string>
+    <string name="textCheckBox">Activer la modification des statistiques</string>
+    <string name="saveButtonText">SAUVEGARDER</string>
+    <string name="newButtonText">NOUVEAU</string>
+    <string name="resetButtonText">REINITIALISER</string>
+    <string name="textNom">Nom :</string>
+    <string name="Classe">Classe :</string>
+    <string name="PV">PV :</string>
+    <string name="DMG">Dmg :</string>
+    <string name="CA">CA :</string>
+    <string name="PDM">Points de Magie :</string>
+</resources>
+
+
